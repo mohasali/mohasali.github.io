@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Mohammed Salim</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+      <a href="#">
+        <h2>
+            Mohammed Salim
+        </h2>
+      </a>
+        <nav>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+        <label class="switch">
+            <input id="switch" type="checkbox" onchange="toggleDark()">
+            <span class="slider">
+                <span class="icon light">🌞</span>
+                <span class="icon dark">🌜</span>
+            </span>
+        </label>        
+    </header>
+
+    <section class="hero" id="hero">
+        <div>
+            <p>
+                Hi there!
+            </p>
+            <p>
+                I'm <strong>Mohammed Salim</strong>, a Computer Science student with a passion for coding, problem solving, and exploring new ideas. </p>
+        </div>
+        <div>
+          <a href="https://github.com/mohasali" target="_blank">My GitHub</a>
+          <a href="https://www.linkedin.com/in/mohammed-salim-ba255a274/" target="_blank">My LinkedIn</a>
+          <a href="assets/CV.pdf" target="_blank">My CV</a>
+        </div>
+    </section>
+
+    <section class="s" id="about">
+        <div style="display: inline-block;">
+            <h1 class="typing-effect">
+                About  Me
+            </h1>
+        </div>
+        <p>
+          I am currently a second-year Computer Science student studying at Aston University. I achieve a<strong> 1st class honours</strong> during my first year of studies and I am predicted to graduate with a <strong>1st class honours</strong> in 2027. 
+        </p>
+        <p>
+          I have a strong passion for <strong>programming</strong> and <strong>problem-solving</strong>, with experience in multiple languages including <strong>C#, Python, and Java</strong>. I enjoy tackling complex challenges and continuously seek opportunities to learn and grow.
+        </p>
+        <p>
+          Outside of my academic work, I dedicate time to personal growth and community engagement. I play volleyball, stay active in the gym , mentor peers in programming, and expand my technical skills by exploring advanced concepts and new languages. 
+        </p>
+    </section>
+    <section class="s" id="skills">
+        <div style="display: inline-block;">
+            <h1 class="typing-effect">
+                Skills
+            </h1>
+        </div>
+           <!-- Programming Languages -->
+    <div class="skill-stack">
+        <h2>Programming Languages</h2>
+        <div class="skills">
+          <div class="skill" data-skill="C#: Intermediate">
+            <img src="images/c-sharp.png" alt="C#">
+            <p>C#</p>
+          </div>
+          <div class="skill" data-skill="Java: Intermediate">
+            <img src="images/java.png" alt="Java">
+            <p>Java</p>
+          </div>
+          <div class="skill" data-skill="Go: Beginner">
+            <img src="images/go.png" alt="Go">
+            <p>Go</p>
+          </div>
+          <div class="skill" data-skill="Python: Proficient">
+            <img src="images/python.png" alt="Python">
+            <p>Python</p>
+          </div>
+          <div class="skill" data-skill="JavaScript: Proficient">
+            <img src="images/js.png" alt="JavaScript">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill" data-skill="PHP: Intermediate">
+            <img src="images/php.png" alt="PHP">
+            <p>PHP</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Web Development -->
+      <div class="skill-stack">
+        <h2>Web Development</h2>
+        <div class="skills">
+          <div class="skill" data-skill="HTML: Proficient">
+            <img src="images/html.png" alt="HTML">
+            <p>HTML</p>
+          </div>
+          <div class="skill" data-skill="CSS: Proficient">
+            <img src="images/css.png" alt="CSS">
+            <p>CSS</p>
+          </div>
+          <div class="skill" data-skill="Laravel: Intermediate">
+            <img src="images/laravel.png" alt="Laravel">
+            <p>Laravel</p>
+          </div>
+          <div class="skill" data-skill="Tailwind: Intermediate">
+            <img src="images/tailwind.png" alt="Tailwind">
+            <p>Tailwind</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Tools & Platforms -->
+      <div class="skill-stack">
+        <h2>Tools & Platforms</h2>
+        <div class="skills">
+          <div class="skill" data-skill="GitHub: Intermediate">
+            <img src="images/github.png" alt="GitHub">
+            <p>GitHub</p>
+          </div>
+          <div class="skill" data-skill="Unity: Intermediate">
+            <img src="images/unity.png" alt="Unity">
+            <p>Unity</p>
+          </div>
+          <div class="skill" data-skill="VS Code: Intermediate">
+            <img src="images/code.png" alt="VS Code">
+            <p>VS Code</p>
+          </div>
+        </div>
+      </div>
+        <div>
+            <p>
+              I'm constantly learning new languages and tools to expand my skill set and stay up to date with the tech industry.
+            </p>
+        </div>
+    </section>
+    <section class="s" id="projects">
+        <div style="display: inline-block;">
+            <h1 class="typing-effect">
+                Projects
+            </h1>
+        </div>
+        <div class="carousel-container">
+            <button class="arrow left-arrow">&#9664;</button>
+            <div class="carousel">
+              <div class="carousel-item front">
+                <div>
+                  <h3>Arduino Volume Mixer</h3>
+                  <p>A physical volume slider written in GoLang and C, based on Deej. This fork adds Bluetooth support, battery optimization, button macros and other features.</p>
+                </div>
+                <a href="https://github.com/mohasali/deej-ESP32-Pro" target="_blank">View on GitHub</a>
+              </div>
+              <div class="carousel-item left-1">
+                <div>
+                  <h3>Virtual Recording Studio</h3>
+                  <p>A C# application built using Unity for managing virtual audio and video recordings.</p>
+                </div>
+              </div>
+              <div class="carousel-item left-2">
+                <div>
+                  <h3>BOG</h3>
+                  <p>A 3D ability first-person shooter game developed using Unity, C#, and Microsoft Azure PlayFab.</p>
+                </div>
+                <a href="https://github.com/mohasali/BOG" target="_blank">View on GitHub</a>
+              </div>
+              <div class="carousel-item right-1">
+                <div>
+                  <h3>Farm to Fork</h3>
+                  <p>An E-Commerce webiste developed as part of my university coursework. Built using Laravel & Tailwind.</p>
+                </div>
+                <a href="https://github.com/mohasali/Farm-To-Fork" target="_blank">View on GitHub</a>
+              </div>
+              <div class="carousel-item right-2">
+                <div>
+                  <h3>Portfolio Website</h3>
+                  <p>A sleek personal portfolio website made to showcase my projects and skills. Built with HTML, CSS, and JavaScript</p>
+                </div>
+                <a href="https://github.com/mohasali/mohasali.github.io" target="_blank">View on GitHub</a>
+              </div>
+              <div class="carousel-item">
+                <div>
+                  <h3>Islamic Quarterly</h3>
+                  <p>An E-Commerce website developed for London Central Mosque. Developed using PHP.</p>
+                </div>
+                <a href="https://islamicquarterly.co.uk/" target="_blank">View Website</a>
+              </div>
+            </div>
+            <button class="arrow right-arrow">&#9654;</button>
+          </div>
+
+    </section>
+
+    <section class="s" id="contact">
+      <div style="display: inline-block;">
+          <h1 class="typing-effect">Contact Me</h1>
+      </div>
+      <form action="https://formspree.io/f/xgvepdvj" method="POST">
+          <input type="text" name="name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="message" placeholder="Your Message" required></textarea>
+          <button type="submit">Send</button>
+      </form>
+      <p>You can also email me directly at: 
+        <a href="mailto:mohammes.salim05@gmail.com">
+          mohammes.salim05@gmail.com
+        </a>
+    </p>
+  </section>
+  
+  <footer class="footer">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+    <a href="mailto:mohammes.salim05@gmail.com">Email Me</a>
+    <div class="bottom-footer">
+        <p>&copy; 2025 Mohammed Salim. All rights reserved.</p>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>
