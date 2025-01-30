@@ -194,3 +194,113 @@ footer a:hover{
     font-size: 0.8rem;
     color: #999999;
 }
+
+
+.menu-toggle{
+  display: none;
+}
+.mobile-nav{
+  display: none;
+}
+/* Mobile-friendly styles for better responsiveness */
+@media (max-width: 768px) {
+  header {
+    align-items: center;
+    padding: 10px;
+  }
+  nav {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    background-color: var(--bg);
+    position: absolute;
+    top: 60px;
+    left: 0;
+    padding: 15px 0px;
+  }
+  nav a {
+    padding: 10px;
+    display: block;
+  }
+  .mobile-switch{
+    display: flex;
+    justify-content: center;
+
+  }
+  .menu-toggle {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  .hero {
+    padding: 50px 20px;
+    text-align: center;
+    margin-top: 50px;
+  }
+  .hero p {
+    font-size: 1.5rem;
+  }
+  .hero a {
+    display: block;
+    margin: 10px auto;
+    text-align: center;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  .s {
+    padding: 50px 20px;
+  }
+  .skills {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .skill{
+    width: 60px;
+  }
+  .skill img {
+    width: 40px;
+  }
+  .carousel-item.right-1 {
+    transform: translateX(100px) scale(0.85);
+  }
+  .carousel-item.left-1{
+    transform: translateX(-100px) scale(0.85);
+  }
+  .carousel-item.left-2,.carousel-item.right-2 {
+    transform: none;
+  }
+  .carousel-item p{
+    font-size: 13px;
+  }
+  .carousel-item h2{
+    font-size: 20px;
+  }
+  .carousel-item{
+    width: 200px;
+    height: 160px;
+  }
+  .carousel{
+    width: 100%;
+    overflow: hidden;
+  }
+  .arrow{
+    display: none;
+  }
+  form input, form textarea {
+    width: calc(100% - 20px);
+    padding: 10px;
+  }
+  form button {
+    width: 100%;
+    padding: 12px;
+  }
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+  footer a {
+    display: block;
+    margin: 5px 0;
+  }
+}
