@@ -284,11 +284,12 @@ footer a:hover{
   }
   .carousel-item{
     width: 200px;
-    height: 160px;
+    height: 170px;
   }
   .carousel{
     width: 100%;
     overflow: hidden;
+    transform-style: flat;
   }
   .arrow{
     display: none;
