@@ -262,13 +262,19 @@ footer a:hover{
     width: 40px;
   }
   .carousel-item.right-1 {
+    display: block;
     transform: translateX(100px) scale(0.85);
   }
   .carousel-item.left-1{
+    display: block;
     transform: translateX(-100px) scale(0.85);
   }
-  .carousel-item.left-2,.carousel-item.right-2 {
+  .carousel-item.front{
+    display: block;
+  }
+  .carousel-item.left-2,.carousel-item.right-2, .carousel-item{
     transform: none;
+    display: none;
   }
   .carousel-item p{
     font-size: 13px;
