@@ -4,6 +4,8 @@ r.style.setProperty('--secondary',colors[Math.floor(Math.random() * colors.lengt
 
 if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
     document.getElementById("switch").toggleAttribute("checked");
+    document.getElementById("switchMobile").toggleAttribute("checked");
+
     toggleDark();
 }
 
@@ -122,3 +124,31 @@ document.querySelector(".right-arrow").addEventListener("click", () => {
     currentIndex = (currentIndex + 1) % totalItems; // Move to the next card
     updatePositions();
 });
+
+let startX, endX;
+const threshold = 50; // Minimum distance for a swipe to be recognized
+
+document.querySelector(".carousel").addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+});
+
+document.querySelector(".carousel").addEventListener("touchend", (e) => {
+    endX = e.changedTouches[0].clientX;
+    handleSwipe();
+});
+
+function handleSwipe() {
+    if (startX - endX > threshold) {
+        // Swipe left Next item
+        currentIndex = (currentIndex + 1) % totalItems;
+    } else if (endX - startX > threshold) {
+        // Swipe right Previous item
+        currentIndex = (currentIndex - 1 + totalItems) % totalItems;
+    }
+    updatePositions();
+}
+
+function toggleMenu() {
+    const nav = document.getElementById("mobile-nav");
+    nav.style.display = nav.style.display === "block" ? "none" : "block";
+  }
