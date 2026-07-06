@@ -68,10 +68,10 @@
         <h1 class="typing-effect">About Me</h1>
       </div>
       <p>
-        I am currently a second-year Computer Science student studying at Aston
-        University. I achieved a<strong> 1st class honours</strong> during my
-        first year of studies and I am predicted to graduate with a
-        <strong>1st class honours</strong> in 2027.
+        I am a Computer Science graduate from Aston University, where I
+        achieved <strong>First Class Honours</strong> in 2026. My studies
+        gave me a strong foundation in software engineering, algorithms,
+        and machine learning.
       </p>
       <p>
         I have a strong passion for <strong>programming</strong> and
@@ -312,7 +312,10 @@
       <a href="#contact">Contact</a>
       <a href="mailto:msalim05@outlook.com">Email Me</a>
       <div class="bottom-footer">
-        <p>&copy; 2025 Mohammed Salim. All rights reserved.</p>
+        <p>&copy; <span id="year"></span> Mohammed Salim. All rights reserved.</p>
+        <script>
+          document.getElementById('year').textContent = new Date().getFullYear();
+        </script>
       </div>
     </footer>
 
